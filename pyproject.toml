@@ -4,7 +4,7 @@ build-backend = "hatchling.build"  # 关键：使用 hatchling 而非 hatch
 
 [project]
 name = "word-abbr"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple Python library for querying common abbreviations of English words."
 authors = [
     { name = "Ethan Jiang", email = "ethn.jiang@gmail.com" }
@@ -33,6 +33,7 @@ Homepage = "https://github.com/ethnjiang/word-abbr"
 include = [
     "word_abbr/data/*.json",  # 包含数据文件
 ]
+packages = ["word_abbr"]
 
 # 动态版本管理（可选）
 [tool.hatch.version]
